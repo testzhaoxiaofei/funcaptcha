@@ -197,6 +197,7 @@ func SetTLSClient(cli *tls_client.HttpClient) {
 	client = cli
 }
 
+// GetOpenAIAuthToken update
 func GetOpenAIAuthToken(puid string, proxy string) (string, error) {
 	token, err := sendRequest(0, "", puid, proxy)
 	return token, err
